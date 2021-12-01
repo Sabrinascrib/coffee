@@ -1,0 +1,366 @@
+:root {
+  --beige: #c09b6b;
+  --beige-background: rgb(243, 237, 224);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Header */
+.header {
+  border: white 1.5rem solid;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/coffe-place.jpeg") no-repeat center center/cover;
+  height: 94vh;
+  text-transform: uppercase;
+}
+
+/* Navbar */
+
+.navbar .logo h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.navbar .logo h2:hover {
+  color: #bbbbbb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  display: flex;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+}
+
+.navbar li a,
+.navbar,
+li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* Slogan  */
+
+.header .slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.slogan img {
+  width: 30rem;
+  margin-bottom: 3rem;
+}
+
+.header .slogan h2 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: "Staatliches", cursive;
+  color: white;
+  font-size: 8rem;
+  letter-spacing: 0.2rem;
+}
+
+.header .slogan p {
+  text-transform: lowercase;
+  margin-bottom: 5rem;
+}
+
+.header .slogan a {
+  text-transform: uppercase;
+}
+
+.home-btn a {
+  font-family: "Staatliches", cursive;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.5rem 5rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.home-btn1 {
+  border: 1px solid white;
+  margin-right: 1rem;
+}
+
+.home-btn2 {
+  background-color: var(--beige);
+  margin-left: 1rem;
+}
+
+.home-btn a:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* best sellers */
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--beige-background);
+  text-align: center;
+}
+
+.icon h2 {
+  font-size: 4rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+}
+
+.icon h4 {
+  color: var(--beige);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.icon hr {
+  color: #000;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: row;
+  margin: 10rem 0rem;
+}
+
+.icon-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-information h3 {
+  font-size: 2rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+  margin: 2rem 0rem;
+}
+
+.icon-information p {
+  width: 70%;
+}
+
+.icon-information img {
+  width: 10rem;
+}
+
+/* about us */
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.about-us-information {
+  display: flex;
+  flex-direction: column;
+  background: var(--beige);
+  padding: 4rem;
+  width: 40%;
+}
+
+.about-us-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us img {
+  width: 80%;
+}
+
+.about-us-information h2 {
+  font-size: 5rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+}
+
+.about-us-information h3 {
+  font-size: 2rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+  margin: 1em 0rem;
+}
+
+.about-us-btn {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10%;
+}
+.about-us-btn a {
+  font-family: "Staatliches", cursive;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1rem 3rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  transition-duration: 1s;
+}
+
+.about-us-btn1 {
+  border: 1px solid white;
+  margin-right: 1rem;
+}
+
+.about-us-btn a:hover {
+  background-color: white;
+  color: #000;
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--beige-background);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  border: white 1.5rem solid;
+}
+
+.footer img {
+  width: 15rem;
+  margin: 3rem 0rem;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info span {
+  color: var(--beige);
+  padding: 0rem 3rem;
+}
+
+.social-footer {
+  margin: 3rem 0rem;
+}
+
+.social-footer a {
+  color: var(--beige);
+  margin: 0rem 5rem;
+}
+
+.copyright {
+  color: #bbbbbb;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 930px) {
+  .about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .header .slogan h2 {
+    font-size: 6rem;
+  }
+
+  .about-us-btn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+  }
+
+  .about-us-btn {
+    margin: 3rem 3rem 0rem 3rem;
+  }
+
+  .about-us a:first-child {
+    margin-bottom: 3rem;
+  }
+
+  .about-us-information {
+    margin-bottom: 3rem;
+  }
+
+  .icon-row {
+    display: flex;
+    flex-direction: column;
+    margin: 10rem 0rem;
+  }
+
+  .icon-information {
+    margin: 0rem 7rem 5rem 7rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .slogan img {
+    width: 20rem;
+  }
+
+  .header .slogan h2 {
+    font-size: 4rem;
+  }
+
+  .home-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-btn a:last-child {
+    margin-top: 2rem;
+    margin-right: 2rem;
+  }
+}

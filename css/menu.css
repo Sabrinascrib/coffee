@@ -1,0 +1,250 @@
+:root {
+  --beige: #c09b6b;
+  --beige-background: rgb(243, 237, 224);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+/* Header */
+.header {
+  border: white 1.5rem solid;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/coffe-place.jpeg") no-repeat center center/cover;
+  height: 60vh;
+  text-transform: uppercase;
+}
+
+/* Navbar */
+
+.navbar .logo h2 {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.navbar .logo h2:hover {
+  color: #bbbbbb;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+}
+
+.navbar ul {
+  display: flex;
+}
+.navbar ul li {
+  display: flex;
+  font-size: 1.8rem;
+  padding: 1.5rem 3rem;
+}
+
+.navbar li a,
+.navbar,
+li a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* Slogan  */
+
+.header .slogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+}
+
+.header .slogan h2 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-family: "Staatliches", cursive;
+  color: white;
+  font-size: 8rem;
+  letter-spacing: 0.2rem;
+  margin-top: 8rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu h2 {
+  font-size: 4rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+  margin: 5rem 0rem 1rem 0rem;
+}
+.menu hr {
+  color: var(--beige);
+  width: 15rem;
+  height: 0.3rem;
+  border: none;
+  background-color: var(--beige);
+  margin-bottom: 4rem;
+}
+
+.menu-1 {
+  margin-right: 5rem;
+}
+
+.menu-2 {
+  margin-left: 5rem;
+}
+
+.menu-1,
+.menu-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-order {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+
+.menu-1 h3,
+.menu-2 h3 {
+  font-size: 3rem;
+  color: #000;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.2rem;
+  position: relative;
+}
+
+.menu-1 h3:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 1px;
+  background-color: rgb(155, 155, 155);
+  position: absolute;
+  right: -1rem;
+  top: 70%;
+}
+
+.menu-2 h3:after {
+  content: "";
+  display: block;
+  width: 20%;
+  height: 1px;
+  background-color: rgb(155, 155, 155);
+  position: absolute;
+  right: -1rem;
+  top: 70%;
+}
+
+.menu-1 h5,
+.menu-2 h5 {
+  font-size: 3rem;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 0.1rem;
+  padding-left: 2rem;
+}
+
+.menu-1 p,
+.menu-2 p {
+  color: var(--beige);
+}
+
+/* footer */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--beige-background);
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 3rem;
+  border: white 1.5rem solid;
+}
+
+.footer img {
+  width: 15rem;
+  margin: 3rem 0rem;
+}
+
+.contact-info {
+  margin-bottom: 2rem;
+}
+
+.contact-info span {
+  color: var(--beige);
+  padding: 0rem 3rem;
+}
+
+.social-footer {
+  margin: 3rem 0rem;
+}
+
+.social-footer a {
+  color: var(--beige);
+  margin: 0rem 5rem;
+}
+
+.copyright {
+  color: #bbbbbb;
+  font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 4rem;
+  }
+
+  .menu-1 {
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+  }
+
+  .menu-2 {
+    margin-left: 0rem;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .header h2 {
+    font-size: 4rem;
+  }
+}
